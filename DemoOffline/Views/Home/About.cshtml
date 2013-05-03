@@ -38,7 +38,9 @@
     <script>
         $(function () {
             if (Modernizr.localstorage) {
-                
+                if (localStorage.myVal) {
+                    alert(localStorage.myVal);
+                }
             }
         });
     </script>
